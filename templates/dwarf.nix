@@ -1,0 +1,59 @@
+{ config, pkgs, lib, ... }:
+
+{
+  imports = [
+    ../base
+    ../modules/chiafan-helper.nix
+  ];
+
+  config = {
+    vital.mainUser = "chiafan";
+
+    users.users."chiafan" = {
+      # TODO(breakds): Add more member's public key
+      openssh.authorizedKeys.keyFiles = [
+        ../data/keys/breakds_samaritan.pub
+      ];
+      shell = pkgs.bash;
+    };
+
+    vital.pre-installed.level = 5;
+    vital.games.steam.enable = false;
+
+    vital.graphical = {
+      enable = true;
+      xserver.dpi = 100;
+      nvidia.enable = lib.mkDefault false;
+      remote-desktop.enable = true;
+    };
+
+    # +----------------+
+    # | Services       |
+    # +----------------+
+
+    networking.firewall.allowedTCPPorts = [ 80 443 5000 ];
+
+    # security.acme = {
+    #   acceptTerms = true;
+    #   email = "bds@breakds.org";
+    # };
+
+    services.nginx = {
+      enable = false;
+      package = pkgs.nginxMainline;
+      recommendedOptimisation = true;
+      recommendedGzipSettings = true;
+      recommendedProxySettings = true;
+
+      # TODO(breakds): Make this per virtual host.
+      clientMaxBodySize = "1000m";
+    };
+
+    vital.services.chia-blockchain = {
+      enable = true;
+      plottingDirectory = "/var/lib/chia/plotting";
+      plotsDirectory = "/var/lib/chia/farm";
+      dotchiaDirectory = "/var/lib/chia/dotchia";
+    };
+  };
+}

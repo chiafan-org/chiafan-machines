@@ -1,0 +1,131 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1614513358,
+        "narHash": "sha256-LakhOx3S1dRjnh0b5Dg3mbZyH0ToC9I8Y2wKSkBaTzU=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5466c5bbece17adaab2d82fae80b46e807611bf3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1612902587,
+        "narHash": "sha256-VZ7Z1OMFf5ReObu3CCVBsC2DWloTYDjqW1onUKejVrE=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "209566c752c4428c7692c134731971193f06b37c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "release-20.09",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "nixos-home": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1618809755,
+        "narHash": "sha256-HPmDlEZxXz3LoZXYltcO8arHh8U8ve2cuTJCRo/dBuE=",
+        "owner": "breakds",
+        "repo": "nixos-home",
+        "rev": "a2c05fc7fcac090b756086eba8b0762178391c30",
+        "type": "github"
+      },
+      "original": {
+        "owner": "breakds",
+        "repo": "nixos-home",
+        "rev": "a2c05fc7fcac090b756086eba8b0762178391c30",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1620808985,
+        "narHash": "sha256-cf/+g1RVawT0rcKmfh2nf/lgnSrj9YZS+1PkCFmoeJQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "327368f98c6a927a84aed3c2f2fd1a7f6983e855",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-20.09",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixos-home": "nixos-home",
+        "nixpkgs": "nixpkgs",
+        "vital-modules": "vital-modules"
+      }
+    },
+    "vital-modules": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "vitalpkgs": "vitalpkgs"
+      },
+      "locked": {
+        "lastModified": 1620018419,
+        "narHash": "sha256-/T4ZIjgxjZKPIF1QnK8UAlDhLHvqu7AQtOAJjqoe4QQ=",
+        "owner": "nixvital",
+        "repo": "vital-modules",
+        "rev": "246b181f957b2d7a843bc01143145c2c765c090e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixvital",
+        "repo": "vital-modules",
+        "rev": "246b181f957b2d7a843bc01143145c2c765c090e",
+        "type": "github"
+      }
+    },
+    "vitalpkgs": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1616876754,
+        "narHash": "sha256-tfAdLpuY3onmc3acdXTebui1XN0chW03jrArpRsV2cY=",
+        "owner": "nixvital",
+        "repo": "vitalpkgs",
+        "rev": "10c927df697df54b428f688227e0ff1dd8f027d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixvital",
+        "repo": "vitalpkgs",
+        "rev": "10c927df697df54b428f688227e0ff1dd8f027d1",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
