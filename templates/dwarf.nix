@@ -28,6 +28,13 @@
     };
 
     # +----------------+
+    # | UHD 750 Hack   |
+    # +----------------+
+
+    boot.kernelPackages = pkgs.linuxPackages_latest;
+    boot.kernelParams = [ "i915.force_probe=4c8a" ];
+
+    # +----------------+
     # | Services       |
     # +----------------+
 
@@ -50,10 +57,10 @@
     };
 
     vital.services.chia-blockchain = {
-      enable = true;
-      plottingDirectory = "/var/lib/chia/plotting";
-      plotsDirectory = "/var/lib/chia/farm";
-      dotchiaDirectory = "/var/lib/chia/dotchia";
+      enable = false;
+      # plottingDirectory = "/var/lib/chia/plotting";
+      # plotsDirectory = "/var/lib/chia/farm";
+      # dotchiaDirectory = "/var/lib/chia/dotchia";
     };
   };
 }
