@@ -8,35 +8,26 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" ];
+  boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/c71cbcab-4e28-4dbe-bd1e-308f9d22f6b0";
+    { device = "/dev/disk/by-uuid/0e4def8d-c79e-42b5-a2b4-bd022171cf80";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/4BE4-0BC3";
+    { device = "/dev/disk/by-uuid/3F10-05E7";
       fsType = "vfat";
     };
 
-  fileSystems."/var/lib/chia/plotting/nvme1" =
-    { device = "/dev/disk/by-label/CHIAPLOT1";
-      fsType = "ext4";
-    };
-
-  fileSystems."/var/lib/chia/plotting/nvme2" =
-    { device = "/dev/disk/by-label/CHIAPLOT2";
-      fsType = "ext4";
-    };
-
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/2ca4fc6a-7643-4a77-af7f-14a57011ab23"; }
+    [ { device = "/dev/disk/by-uuid/44b6f388-a5a9-41e7-a372-90a8889298f6"; }
     ];
 
-  nix.maxJobs = lib.mkDefault 16;
-  powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
+  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  # high-resolution display
+  hardware.video.hidpi.enable = lib.mkDefault true;
 }
