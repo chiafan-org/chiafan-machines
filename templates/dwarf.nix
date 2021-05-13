@@ -38,7 +38,7 @@
     # | Services       |
     # +----------------+
 
-    networking.firewall.allowedTCPPorts = [ 80 443 5000 ];
+    networking.firewall.allowedTCPPorts = [ 80 443 5000 8444 ];
 
     # security.acme = {
     #   acceptTerms = true;
