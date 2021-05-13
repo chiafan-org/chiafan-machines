@@ -14,36 +14,36 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/0e4def8d-c79e-42b5-a2b4-bd022171cf80";
+    { device = "/dev/disk/by-label/NIXOS_ROOT";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/3F10-05E7";
+    { device = "/dev/disk/by-label/NIXOS_BOOT";
       fsType = "vfat";
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/44b6f388-a5a9-41e7-a372-90a8889298f6"; }
+    [ { device = "/dev/disk/by-label/NIXOS_SWAP"; }
     ];
 
-  fileSystems."/var/lib/chia/plotting/P01" =
-    { device = "/dev/disk/by-label/P01";
+  fileSystems."/var/lib/chia/plotting/P07" =
+    { device = "/dev/disk/by-label/P07";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/plotting/P02" =
-    { device = "/dev/disk/by-label/P02";
+  fileSystems."/var/lib/chia/plotting/P08" =
+    { device = "/dev/disk/by-label/P08";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/farm/F01" =
-    { device = "/dev/disk/by-label/F01";
+  fileSystems."/var/lib/chia/farm/F07" =
+    { device = "/dev/disk/by-label/F07";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/farm/F02" =
-    { device = "/dev/disk/by-label/F02";
+  fileSystems."/var/lib/chia/farm/F08" =
+    { device = "/dev/disk/by-label/F08";
       fsType = "ext4";
     };
 
