@@ -57,10 +57,10 @@
     };
 
     vital.services.chia-blockchain = {
-      enable = false;
-      # plottingDirectory = "/var/lib/chia/plotting";
-      # plotsDirectory = "/var/lib/chia/farm";
-      # dotchiaDirectory = "/var/lib/chia/dotchia";
+      enable = true;
+      plottingDirectory = "/var/lib/chia/plotting";
+      plotsDirectory = "/var/lib/chia/farm";
+      dotchiaDirectory = "/var/lib/chia/dotchia";
     };
   };
 }

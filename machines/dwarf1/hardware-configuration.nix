@@ -27,7 +27,27 @@
     [ { device = "/dev/disk/by-uuid/44b6f388-a5a9-41e7-a372-90a8889298f6"; }
     ];
 
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  fileSystems."/var/lib/chia/plotting/P01" =
+    { device = "/dev/disk/by-label/P01";
+      fsType = "ext4";
+    };
+
+  fileSystems."/var/lib/chia/plotting/P02" =
+    { device = "/dev/disk/by-label/P02";
+      fsType = "ext4";
+    };
+
+  fileSystems."/var/lib/chia/farm/F01" =
+    { device = "/dev/disk/by-label/F01";
+      fsType = "ext4";
+    };
+
+  fileSystems."/var/lib/chia/farm/F02" =
+    { device = "/dev/disk/by-label/F02";
+      fsType = "ext4";
+    };
+
+  powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
   # high-resolution display
   hardware.video.hidpi.enable = lib.mkDefault true;
 }
