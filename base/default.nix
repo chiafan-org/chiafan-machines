@@ -18,5 +18,8 @@
     
     # Performance Tools
     sysstat linuxPackages.perf perf-tools flameGraph
+
+    # Other Tools
+    jq
   ];
 }

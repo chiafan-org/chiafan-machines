@@ -8,8 +8,23 @@
 
   config = {
     networking = {
-      hostName = "dwarf1";
-      hostId = "a524130f";
+      hostName = "dwarf3";
+      hostId = "411c2801";
+    };
+
+    vital.services.chiafan-workforce = {
+      enable = true;
+      farmKey = "8d3e6ed9dc07e3f38fb7321adc3481a95fbdea515f60ff9737c583c5644c6cf83a5e38e9f3e1fc01d43deef0fa1bd0be";
+      poolKey = "ad0dce731a9ef1813dca8498fa37c3abda52ad76795a8327ea883e6aa6ee023f9e06e9a0d5ea1fa3c625261b9da18f12";
+      workers = [
+        "/plotting/P05:/plots/F05"
+        "/plotting/P05:/plots/F05"
+        "/plotting/P05:/plots/F05"
+        "/plotting/P05:/plots/F05"
+        "/plotting/P06:/plots/F05"
+        "/plotting/P06:/plots/F05"
+        "/plotting/P06:/plots/F05"
+      ];
     };
     
     # This value determines the NixOS release from which the default

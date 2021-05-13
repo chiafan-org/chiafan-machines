@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-20.09";
 
     # Use vital-modules, with the same nixpkgs
-    vital-modules.url = "github:nixvital/vital-modules?rev=246b181f957b2d7a843bc01143145c2c765c090e";
+    vital-modules.url = "github:nixvital/vital-modules?rev=3b869265725a61de267116ef3ab182abbe57f542";
     vital-modules.inputs.nixpkgs.follows = "nixpkgs";
 
     # Use nixos-home, with the same nixpkgs
@@ -20,6 +20,30 @@
         modules = [
           vital-modules.nixosModules.foundation
           ./machines/dwarf1
+        ];
+      };
+
+      dwarf2 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/dwarf2
+        ];
+      };
+
+      dwarf3 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/dwarf3
+        ];
+      };
+
+      dwarf4 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/dwarf4
         ];
       };
     };
