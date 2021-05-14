@@ -12,6 +12,13 @@
       hostId = "339032f0";
     };
 
+    # +----------------+
+    # | UHD 750 Hack   |
+    # +----------------+
+
+    boot.kernelPackages = pkgs.linuxPackages_latest;
+    boot.kernelParams = [ "i915.force_probe=4c8a" ];
+
     vital.services.chiafan-workforce = {
       enable = true;
       farmKey = "8d3e6ed9dc07e3f38fb7321adc3481a95fbdea515f60ff9737c583c5644c6cf83a5e38e9f3e1fc01d43deef0fa1bd0be";

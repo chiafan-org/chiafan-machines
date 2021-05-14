@@ -28,17 +28,10 @@
     };
 
     # +----------------+
-    # | UHD 750 Hack   |
-    # +----------------+
-
-    boot.kernelPackages = pkgs.linuxPackages_latest;
-    boot.kernelParams = [ "i915.force_probe=4c8a" ];
-
-    # +----------------+
     # | Services       |
     # +----------------+
 
-    networking.firewall.allowedTCPPorts = [ 80 443 5000 8444 ];
+    networking.firewall.allowedTCPPorts = [ 80 443 8444 ];
 
     # security.acme = {
     #   acceptTerms = true;

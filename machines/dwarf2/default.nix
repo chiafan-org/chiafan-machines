@@ -11,6 +11,13 @@
       hostName = "dwarf2";
       hostId = "3301a563";
     };
+    
+    # +----------------+
+    # | UHD 750 Hack   |
+    # +----------------+
+
+    boot.kernelPackages = pkgs.linuxPackages_latest;
+    boot.kernelParams = [ "i915.force_probe=4c8a" ];    
 
     vital.services.chiafan-workforce = {
       enable = true;
