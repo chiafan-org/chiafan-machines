@@ -32,6 +32,7 @@
     # +----------------+
 
     networking.firewall.allowedTCPPorts = [ 80 443 8444 8447 ];
+    networking.firewall.allowedUDPPorts = [ 8444 8447 ];
 
     # security.acme = {
     #   acceptTerms = true;
