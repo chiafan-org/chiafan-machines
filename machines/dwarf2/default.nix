@@ -26,6 +26,9 @@
         "/plotting/P04:/plots/F03"
       ];
     };
+
+    # For the monitor
+    networking.firewall.allowedTCPPorts = [ 5001 ];
     
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
