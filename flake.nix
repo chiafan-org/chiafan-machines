@@ -46,6 +46,14 @@
           ./machines/dwarf4
         ];
       };
+
+      dwarf6 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/dwarf6
+        ];
+      };
     };
   };
 }
