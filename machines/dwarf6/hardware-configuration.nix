@@ -27,23 +27,23 @@
     [ { device = "/dev/disk/by-label/NIXOS_SWAP"; }
     ];
 
-  fileSystems."/var/lib/chia/plotting/P09" =
-    { device = "/dev/disk/by-label/P09";
+  fileSystems."/var/lib/chia/plotting/P11" =
+    { device = "/dev/disk/by-label/P11";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/plotting/P10" =
-    { device = "/dev/disk/by-label/P10";
+  fileSystems."/var/lib/chia/plotting/P12" =
+    { device = "/dev/disk/by-label/P12";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/farm/F09" =
-    { device = "/dev/disk/by-label/F09";
+  fileSystems."/var/lib/chia/farm/F11" =
+    { device = "/dev/disk/by-label/F11";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/farm/F10" =
-    { device = "/dev/disk/by-label/F10";
+  fileSystems."/var/lib/chia/farm/F12" =
+    { device = "/dev/disk/by-label/F12";
       fsType = "ext4";
     };
 
