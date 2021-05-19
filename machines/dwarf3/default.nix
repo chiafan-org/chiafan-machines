@@ -31,6 +31,7 @@
         "/plotting/P06:/plots/F05"
         "/plotting/P06:/plots/F05"
         "/plotting/P06:/plots/F05"
+        forwardConcurrency = 4;
       ];
     };
     

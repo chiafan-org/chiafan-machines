@@ -26,6 +26,7 @@
         "/plotting/P12:/plots/F11"
         "/plotting/P12:/plots/F11"
       ];
+      forwardConcurrency = 4;
     };
     
     # This value determines the NixOS release from which the default

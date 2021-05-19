@@ -2,11 +2,11 @@
   "nodes": {
     "flake-utils": {
       "locked": {
-        "lastModified": 1614513358,
-        "narHash": "sha256-LakhOx3S1dRjnh0b5Dg3mbZyH0ToC9I8Y2wKSkBaTzU=",
+        "lastModified": 1620759905,
+        "narHash": "sha256-WiyWawrgmyN0EdmiHyG2V+fqReiVi8bM9cRdMaKQOFg=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "5466c5bbece17adaab2d82fae80b46e807611bf3",
+        "rev": "b543720b25df6ffdfcf9227afafc5b8c1fabfae8",
         "type": "github"
       },
       "original": {
@@ -89,11 +89,11 @@
         "vitalpkgs": "vitalpkgs"
       },
       "locked": {
-        "lastModified": 1621201785,
-        "narHash": "sha256-rC4zPuZn2XGrAWsg8fpxWvoFVzHLFFqoNQKzgcPoHXA=",
+        "lastModified": 1621461096,
+        "narHash": "sha256-EhC3lThRVP8wQcQr/UcYJinzasibZov9TfZPbQ+KB7g=",
         "owner": "nixvital",
         "repo": "vital-modules",
-        "rev": "66b90116c8e6221f79649abac5d31eacf657ced2",
+        "rev": "ff6ff94d9c9ec70696dc321860951303705dfcd6",
         "type": "github"
       },
       "original": {
@@ -110,11 +110,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1621201694,
-        "narHash": "sha256-I6qGXJ3EGjnLbp0UvC9sOANfGtlT4wc1bSWp/3M/0O8=",
+        "lastModified": 1621461062,
+        "narHash": "sha256-hkXL7sIFcdGeDsRpNtBvEgP6/pTk96J68rneW6mEXFE=",
         "owner": "nixvital",
         "repo": "vitalpkgs",
-        "rev": "560611656b8051382f9693bf4eacf8cad993b7fb",
+        "rev": "4ec60398a9f4553dfebe9100ec2af7f226213454",
         "type": "github"
       },
       "original": {

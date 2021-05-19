@@ -32,6 +32,7 @@
         "/plotting/P08:/plots/F07"
         "/plotting/P08:/plots/F07"
       ];
+      forwardConcurrency = 4;
     };
     
     # This value determines the NixOS release from which the default

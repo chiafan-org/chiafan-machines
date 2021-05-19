@@ -32,6 +32,7 @@
         "/plotting/P04:/plots/F03"
         "/plotting/P04:/plots/F03"
       ];
+      forwardConcurrency = 4;
     };
 
     vital.services.chiafan-monitor = {
