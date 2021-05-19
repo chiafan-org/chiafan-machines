@@ -35,18 +35,6 @@
       forwardConcurrency = 4;
     };
 
-    vital.services.chiafan-monitor = {
-      enable = true;
-      machines = [
-        "10.0.1.145:5008"
-        "10.0.1.146:5008"
-        "10.0.1.80:5008"
-        "10.0.1.82:5008"
-        "10.0.1.87:5008" # dwarf6
-      ];
-      port = 5001;
-    };
-    
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
     # on your system were taken. It‘s perfectly fine and recommended to leave

@@ -34,6 +34,18 @@
     networking.firewall.allowedTCPPorts = [ 80 443 8444 8447 ];
     networking.firewall.allowedUDPPorts = [ 8444 8447 ];
 
+    vital.services.chiafan-monitor = {
+      enable = true;
+      machines = [
+        "10.0.1.145:5008"
+        "10.0.1.146:5008"
+        "10.0.1.80:5008"
+        "10.0.1.82:5008"
+        "10.0.1.87:5008"
+      ];
+      port = 5001;
+    };
+    
     # security.acme = {
     #   acceptTerms = true;
     #   email = "bds@breakds.org";
