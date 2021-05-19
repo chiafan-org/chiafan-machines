@@ -54,6 +54,14 @@
           ./machines/dwarf6
         ];
       };
+
+      shepherd1 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/shepherd1
+        ];
+      };
     };
   };
 }
