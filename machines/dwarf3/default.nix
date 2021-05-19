@@ -28,9 +28,12 @@
         "/plotting/P05:/plots/F05"
         "/plotting/P05:/plots/F05"
         "/plotting/P05:/plots/F05"
-        "/plotting/P06:/plots/F05"
-        "/plotting/P06:/plots/F05"
-        "/plotting/P06:/plots/F05"
+        "/plotting/P05:/plots/F05"
+        "/plotting/P06:/plots/F06"
+        "/plotting/P06:/plots/F06"
+        "/plotting/P06:/plots/F06"
+        "/plotting/P06:/plots/F06"
+        "/plotting/P06:/plots/F06"        
         forwardConcurrency = 4;
       ];
     };
