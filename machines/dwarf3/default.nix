@@ -34,8 +34,8 @@
         "/plotting/P06:/plots/F06"
         "/plotting/P06:/plots/F06"
         "/plotting/P06:/plots/F06"        
-        forwardConcurrency = 4;
       ];
+      forwardConcurrency = 4;
     };
     
     # This value determines the NixOS release from which the default
