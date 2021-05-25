@@ -9,7 +9,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    gparted pass smbclient
+    gparted pass smbclient parted
   ] ++ lib.optionals config.vital.graphical.enable [
     google-chrome
 
