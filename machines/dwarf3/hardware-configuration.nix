@@ -37,15 +37,15 @@
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/farm/F05" =
-    { device = "/dev/disk/by-label/F05";
-      fsType = "ext4";
-    };
+  # fileSystems."/var/lib/chia/farm/F05" =
+  #   { device = "/dev/disk/by-label/F05";
+  #     fsType = "ext4";
+  #   };
 
-  fileSystems."/var/lib/chia/farm/F06" =
-    { device = "/dev/disk/by-label/F06";
-      fsType = "ext4";
-    };
+  # fileSystems."/var/lib/chia/farm/F06" =
+  #   { device = "/dev/disk/by-label/F06";
+  #     fsType = "ext4";
+  #   };
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
   # high-resolution display
