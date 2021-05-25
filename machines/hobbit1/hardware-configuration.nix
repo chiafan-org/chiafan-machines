@@ -19,7 +19,7 @@
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-lable/NIXOS_BOOT";
+    { device = "/dev/disk/by-label/NIXOS_BOOT";
       fsType = "vfat";
     };
 
