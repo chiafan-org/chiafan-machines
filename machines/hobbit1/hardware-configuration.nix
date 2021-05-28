@@ -26,7 +26,7 @@
   fileSystems."/opt/experiment" =
     { device = "/dev/disk/by-label/EXPERIMENT";
       fsType = "ext4";
-      options = "auto nofail";
+      options = [ "auto" "nofail" ];
     };
 
   swapDevices =
