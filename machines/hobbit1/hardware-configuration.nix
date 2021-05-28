@@ -23,6 +23,12 @@
       fsType = "vfat";
     };
 
+  fileSystems."/opt/experiment" =
+    { device = "/dev/disk/by-label/EXPERIMENT";
+      fsType = "ext4";
+      options = "auto nofail";
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-label/NIXOS_SWAP"; }
     ];
