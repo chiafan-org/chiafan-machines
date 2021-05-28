@@ -70,6 +70,14 @@
           ./machines/hobbit1
         ];
       };
+
+      laborfactory = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/laborfactory
+        ];
+      };
     };
   };
 }
