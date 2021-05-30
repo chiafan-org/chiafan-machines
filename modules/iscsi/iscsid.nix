@@ -13,9 +13,10 @@ let
     InitiatorName=${cfg.initiatorName}
   '';
 
-  settingsFormat = pkgs.formats.keyValue {
-    trueVal = "Yes";
-    falseVal = "No";
+  settingsFormat = {
+    generate = name: value:
+      pkgs.writeText name (lib.concatStringsSep "\n" 
+        (lib.mapAttrsToList (key: val: "${key} = ${toString val}") value));
   };
 
 in {
@@ -27,7 +28,7 @@ in {
 
       settings = mkOption {
         type = types.submodule {
-          freeformType = settingsFormat.type;
+          freeformType = types.attrs;
         };
 
         default = { "node.startup" = "automatic"; };
@@ -110,7 +111,7 @@ in {
 
         serviceConfig = {
           Type = "notify";
-          ExecStart = "${pkgs.openiscsi}/bin/iscsid -f -i ${if config.boot.initrd.iscsi.ibft then "/sys/firmware/ibft/initiator/initiator-name" else initiatorName}";
+          ExecStart = "${pkgs.openiscsi}/bin/iscsid -f -i ${initiatorName}";
           KillMode = "mixed";
           Restart = "on-failure";
         };
