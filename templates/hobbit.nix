@@ -49,12 +49,5 @@
       # TODO(breakds): Make this per virtual host.
       clientMaxBodySize = "1000m";
     };
-
-    vital.services.chia-blockchain = {
-      enable = false;
-      plottingDirectory = "/var/lib/chia/plotting";
-      plotsDirectory = "/var/lib/chia/farm";
-      dotchiaDirectory = "/var/lib/chia/dotchia";
-    };
   };
 }
