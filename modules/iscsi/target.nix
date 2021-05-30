@@ -1,3 +1,6 @@
+# Origianlly from
+# https://github.com/NixOS/nixpkgs/blob/78af98a068906cb88fa14c31bd703341562bf890/nixos/modules/services/networking/iscsi/target.nix
+
 { config, lib, pkgs, ... }:
 
 with lib;
