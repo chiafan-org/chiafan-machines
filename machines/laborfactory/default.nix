@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../base
+    ../../modules/iscsi/initiator.nix
   ];
 
   config = {
@@ -45,6 +46,11 @@
 
     networking.firewall.allowedTCPPorts = [ 80 443 8444 8447 ];
     networking.firewall.allowedUDPPorts = [ 8444 8447 ];
+
+    services.openiscsi = {
+      enable = true;
+      name = "iqn.2021-05.org.linux-iscsi.initiatorhost:laborfactory";
+    };
 
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
