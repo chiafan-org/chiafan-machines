@@ -13,7 +13,8 @@
     };
 
     environment.systemPackages = with pkgs; [
-      python3Packages.rtslib
+      python3Packages.rtslib  # provide targetctl
+      targetcli
     ];
 
     # This value determines the NixOS release from which the default
