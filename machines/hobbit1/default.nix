@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../templates/dwarf.nix
+    ../../modules/iscsi/target.nix
   ];
 
   config = {
@@ -16,6 +17,10 @@
       python3Packages.rtslib  # provide targetctl
       targetcli
     ];
+
+    services.target = {
+      enable = true;
+    };
 
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
