@@ -48,11 +48,11 @@
     services.iscsid = {
       enable = true;
       initiatorName = "iqn.2021-05.org.linux-iscsi.initiatorhost:laborfactory";
-      scanTargets = {
+      scanTargets = [{
         target = "10.77.1.119";
-        port = "3260";
+        port = 3260;
         type = "sendtargets";
-      };
+      }];
     };
 
     networking.firewall.allowedTCPPorts = [ 80 443 8444 8447 ];
