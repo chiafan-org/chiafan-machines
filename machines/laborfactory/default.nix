@@ -49,7 +49,7 @@
     networking.firewall.allowedUDPPorts = [ 8444 8447 ];
 
     services.openiscsi = {
-      enable = false;
+      enable = true;
       name = "iqn.2021-05.org.linux-iscsi.initiatorhost:laborfactory";
     };
 
