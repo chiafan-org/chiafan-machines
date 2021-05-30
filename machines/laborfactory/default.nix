@@ -28,6 +28,7 @@
 
     vital.graphical = {
       enable = true;
+      xserver.displayManager = "lightdm";
       xserver.dpi = 100;
       nvidia = {
         enable = true;
