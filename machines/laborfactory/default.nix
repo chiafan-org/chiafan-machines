@@ -50,6 +50,8 @@
 
     services.openiscsi = {
       enable = true;
+      enableAutoLoginOut = true;
+      discoverPortal = "10.77.1.119";
       name = "iqn.2021-05.org.linux-iscsi.initiatorhost:laborfactory";
     };
 
