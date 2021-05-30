@@ -48,13 +48,6 @@
     networking.firewall.allowedTCPPorts = [ 80 443 8444 8447 ];
     networking.firewall.allowedUDPPorts = [ 8444 8447 ];
 
-    services.openiscsi = {
-      enable = true;
-      enableAutoLoginOut = true;
-      discoverPortal = "10.77.1.119";
-      name = "iqn.2021-05.org.linux-iscsi.initiatorhost:laborfactory";
-    };
-
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
     # on your system were taken. It‘s perfectly fine and recommended to leave
