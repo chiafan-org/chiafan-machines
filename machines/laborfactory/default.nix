@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../base
-    ../../modules/iscsi/initiator.nix
+    ../../modules/iscsi/iscsid.nix
   ];
 
   config = {
@@ -44,6 +44,16 @@
     # +----------------+
     # | Services       |
     # +----------------+
+
+    services.iscsid = {
+      enable = true;
+      initiatorName = "iqn.2021-05.org.linux-iscsi.initiatorhost:laborfactory";
+      scanTargets = {
+        target = "10.77.1.119";
+        port = "3260";
+        type = "sendtargets";
+      };
+    };
 
     networking.firewall.allowedTCPPorts = [ 80 443 8444 8447 ];
     networking.firewall.allowedUDPPorts = [ 8444 8447 ];
