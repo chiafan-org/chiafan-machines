@@ -23,6 +23,12 @@
       fsType = "vfat";
     };
 
+  fileSystems."/opt/experiment" =
+    { device = "/dev/disk/by-label/EXPERIMENT";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/1f6daa4e-7b6b-43dd-afad-e0c791055a5b"; }
     ];
