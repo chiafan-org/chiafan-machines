@@ -22,6 +22,13 @@ in
           This file is normally read and written by targetcli
         '';
       };
+
+      port = mkOption {
+        type = lib.types.port;
+        description = "The port on which the iscsi portal serves";
+        default = 3260;
+        example = 3260;
+      };
     };
   };
 
@@ -52,5 +59,7 @@ in
     systemd.tmpfiles.rules = [
       "d /etc/target 0700 root root - -"
     ];
+
+    networking.firewall.allowedTCPPorts = [ cfg.port ];
   };
 }
