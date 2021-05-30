@@ -40,11 +40,13 @@
   fileSystems."/var/lib/chia/farm/F15" =
     { device = "/dev/disk/by-label/F15";
       fsType = "ext4";
+      options = [ "auto" "nofail" ];
     };
 
   fileSystems."/var/lib/chia/farm/F16" =
     { device = "/dev/disk/by-label/F16";
       fsType = "ext4";
+      options = [ "auto" "nofail" ];      
     };
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
