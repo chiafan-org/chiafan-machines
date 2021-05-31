@@ -4,6 +4,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-20.09";
 
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs?rev=f924460e91cba6473c5dc4b8ccb1a1cfc05bc2d7";
+
     # Use vital-modules, with the same nixpkgs
     vital-modules.url = "github:nixvital/vital-modules";
     vital-modules.inputs.nixpkgs.follows = "nixpkgs";
@@ -13,7 +15,18 @@
     nixos-home.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, vital-modules, nixos-home, ... }: {
+  outputs = { self, nixpkgs, nixpkgs-unstable, vital-modules, nixos-home, ... }: let
+    chia-from-unstable = system: { config, ...}: let
+      pkgs-unstable = import nixpkgs-unstable {
+        inherit system;
+      };
+    in {
+      environment.systemPackages = [
+        pkgs-unstable.chia
+      ];
+    };
+    
+  in {
     nixosConfigurations = {
       dwarf1 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -74,6 +87,7 @@
       laborfactory = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          (chia-from-unstable "x86_64-linux")
           vital-modules.nixosModules.foundation
           ./machines/laborfactory
         ];
