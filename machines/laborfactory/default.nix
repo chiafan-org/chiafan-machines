@@ -41,6 +41,10 @@
       remote-desktop.enable = false;
     };
 
+    environment.systemPackages = with pkgs; [
+      chia
+    ];
+
     # +----------------+
     # | Services       |
     # +----------------+

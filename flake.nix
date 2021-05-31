@@ -21,8 +21,10 @@
         inherit system;
       };
     in {
-      environment.systemPackages = [
-        pkgs-unstable.chia
+      nixpkgs.overlays = [
+        (final: prev: {
+          chia = pkgs-unstable.chia;
+        })
       ];
     };
     
