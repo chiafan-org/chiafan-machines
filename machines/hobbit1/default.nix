@@ -4,7 +4,6 @@
   imports = [
     ./hardware-configuration.nix
     ../../templates/hobbit.nix
-    ../../modules/iscsi/target.nix
   ];
 
   config = {

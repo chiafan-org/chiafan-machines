@@ -90,6 +90,38 @@
         "type": "github"
       }
     },
+    "nixpkgs-unstable_2": {
+      "locked": {
+        "lastModified": 1622437901,
+        "narHash": "sha256-ww6EcXDmOgJbx2DOGAW6PbIQK3K/WGCpFYW4yNyP/XM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f924460e91cba6473c5dc4b8ccb1a1cfc05bc2d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f924460e91cba6473c5dc4b8ccb1a1cfc05bc2d7",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable_3": {
+      "locked": {
+        "lastModified": 1622437901,
+        "narHash": "sha256-ww6EcXDmOgJbx2DOGAW6PbIQK3K/WGCpFYW4yNyP/XM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f924460e91cba6473c5dc4b8ccb1a1cfc05bc2d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f924460e91cba6473c5dc4b8ccb1a1cfc05bc2d7",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixos-home": "nixos-home",
@@ -103,14 +135,15 @@
         "nixpkgs": [
           "nixpkgs"
         ],
+        "nixpkgs-unstable": "nixpkgs-unstable_2",
         "vitalpkgs": "vitalpkgs"
       },
       "locked": {
-        "lastModified": 1621461096,
-        "narHash": "sha256-EhC3lThRVP8wQcQr/UcYJinzasibZov9TfZPbQ+KB7g=",
+        "lastModified": 1622493760,
+        "narHash": "sha256-HnObUKQUrz4/Vqc0k1FLDt8gdTFzRT920kYy3WXetXY=",
         "owner": "nixvital",
         "repo": "vital-modules",
-        "rev": "ff6ff94d9c9ec70696dc321860951303705dfcd6",
+        "rev": "5889ac968be8f7bcba958b867f1df6e64168d567",
         "type": "github"
       },
       "original": {
@@ -124,14 +157,15 @@
         "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "nixpkgs-unstable": "nixpkgs-unstable_3"
       },
       "locked": {
-        "lastModified": 1621461062,
-        "narHash": "sha256-hkXL7sIFcdGeDsRpNtBvEgP6/pTk96J68rneW6mEXFE=",
+        "lastModified": 1622488457,
+        "narHash": "sha256-t+ymFpkMMmS8epZ4/NQeWNG2RmeY1A8yYERAovJOEjs=",
         "owner": "nixvital",
         "repo": "vitalpkgs",
-        "rev": "4ec60398a9f4553dfebe9100ec2af7f226213454",
+        "rev": "e6234eca28d1706f739465da6297cd8cd5c2eb9f",
         "type": "github"
       },
       "original": {
