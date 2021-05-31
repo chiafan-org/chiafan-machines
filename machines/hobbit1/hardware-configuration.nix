@@ -23,6 +23,12 @@
       fsType = "vfat";
     };
 
+  fileSystems."/run/media/chiafan/CHIAFARM2" =
+    { device = "/dev/disk/by-label/CHIAFARM2";
+      fsType = "ext4";
+      options = [ "noauto" ];
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-label/NIXOS_SWAP"; }
     ];
