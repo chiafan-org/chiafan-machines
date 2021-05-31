@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../templates/dwarf.nix
+    ../../templates/hobbit.nix
     ../../modules/iscsi/target.nix
   ];
 
