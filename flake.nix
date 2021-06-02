@@ -86,6 +86,14 @@
         ];
       };
 
+      bilbo = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/bilbo
+        ];
+      };
+
       laborfactory = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
