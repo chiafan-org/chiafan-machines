@@ -43,8 +43,8 @@
       options = [ "auto" "nofail" ];      
     };
 
-  fileSystems."/var/lib/chia/farm/F22" =
-    { device = "/dev/disk/by-label/F22";
+  fileSystems."/var/lib/chia/farm/F30" =
+    { device = "/dev/disk/by-label/F30";
       fsType = "ext4";
       options = [ "auto" "nofail" ];      
     };
