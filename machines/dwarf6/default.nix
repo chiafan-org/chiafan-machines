@@ -18,19 +18,19 @@
       farmKey = "8d3e6ed9dc07e3f38fb7321adc3481a95fbdea515f60ff9737c583c5644c6cf83a5e38e9f3e1fc01d43deef0fa1bd0be";
       poolKey = "ad0dce731a9ef1813dca8498fa37c3abda52ad76795a8327ea883e6aa6ee023f9e06e9a0d5ea1fa3c625261b9da18f12";
       workers = [
-        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F13"
-        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F13"
-        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F13"
-        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F13"
-        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F13"
-        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F14"
-        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F14"
-        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F14"
-        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F14"
-        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F14"
+        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F25"
+        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F26"
+        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F27"
+        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F28"
+        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F29"
+        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F25"
+        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F26"
+        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F27"
+        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F28"
+        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F29"
       ];
       forwardConcurrency = 4;
-      staggering = 1200;
+      staggering = 900;
     };
     
     # This value determines the NixOS release from which the default
