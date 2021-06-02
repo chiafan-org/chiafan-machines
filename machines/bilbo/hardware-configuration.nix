@@ -23,10 +23,10 @@
       fsType = "vfat";
     };
 
-  fileSystems."/run/media/chiafan/CHIAFARM2" =
-    { device = "/dev/disk/by-label/CHIAFARM2";
+  fileSystems."/var/lib/chia/farm/F06" =
+    { device = "/dev/disk/by-label/F06";
       fsType = "ext4";
-      options = [ "noauto" "nofail" ];
+      options = [ "auto" "nofail" ];
     };
 
   swapDevices =
