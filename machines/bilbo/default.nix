@@ -9,7 +9,7 @@
   config = {
     networking = {
       hostName = "bilbo";
-      hostId = "88600056";
+      hostId = "72f94d4a";
     };
 
     # security.acme = {
