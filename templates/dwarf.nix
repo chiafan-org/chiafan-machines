@@ -26,6 +26,8 @@
       nvidia.enable = lib.mkDefault false;
       remote-desktop.enable = true;
     };
+ 
+    environment.systemPackages = with pkgs; [ chia ];
 
     # +----------------+
     # | Services       |
@@ -48,13 +50,6 @@
 
       # TODO(breakds): Make this per virtual host.
       clientMaxBodySize = "1000m";
-    };
-
-    vital.services.chia-blockchain = {
-      enable = true;
-      plottingDirectory = "/var/lib/chia/plotting";
-      plotsDirectory = "/var/lib/chia/farm";
-      dotchiaDirectory = "/var/lib/chia/dotchia";
     };
   };
 }
