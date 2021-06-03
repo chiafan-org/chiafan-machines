@@ -30,10 +30,11 @@
 
     # TODO(breakds): Enable this when all are setup
     services.iscsid = {
-      enable = false;
-      initiatorName = "iqn.2021-05.org.linux-iscsi.initiatorhost:hardstone";
+      enable = enable;
+      initiatorName = "iqn.2021-05.org.linux-iscsi.initiatorhost:bilbo";
       scanTargets = [{
-        target = "10.77.1.119";
+        # hobbit1
+        target = "10.0.1.98";
         port = 3260;
         type = "sendtargets";
       }];
