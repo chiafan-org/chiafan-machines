@@ -30,7 +30,7 @@
 
     # TODO(breakds): Enable this when all are setup
     services.iscsid = {
-      enable = enable;
+      enable = true;
       initiatorName = "iqn.2021-05.org.linux-iscsi.initiatorhost:bilbo";
       scanTargets = [{
         # hobbit1
