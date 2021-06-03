@@ -41,6 +41,54 @@
       options = [ "auto" "nofail" ];
     };
 
+  fileSystems."/var/lib/chia/farm/CHIAFARM2" =
+    { device = "/dev/disk/by-label/CHIAFARM2";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/CHIAFARM3" =
+    { device = "/dev/disk/by-label/CHIAFARM3";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/F02" =
+    { device = "/dev/disk/by-label/F02";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/F03" =
+    { device = "/dev/disk/by-label/F03";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/F05" =
+    { device = "/dev/disk/by-label/F05";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/F08" =
+    { device = "/dev/disk/by-label/F08";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/F11" =
+    { device = "/dev/disk/by-label/F11";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
+  fileSystems."/var/lib/chia/farm/F12" =
+    { device = "/dev/disk/by-label/F12";
+      fsType = "ext4";
+      options = [ "auto" "nofail" ];
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-label/NIXOS_SWAP"; }
     ];
