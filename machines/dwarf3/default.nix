@@ -26,14 +26,14 @@
       poolKey = "ad0dce731a9ef1813dca8498fa37c3abda52ad76795a8327ea883e6aa6ee023f9e06e9a0d5ea1fa3c625261b9da18f12";
       workers = [
         "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F17"
+        "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F18"
         "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F17"
-        "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F17"
-        "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F17"
+        "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F18"
         "/var/lib/chia/plotting/P05:/var/lib/chia/farm/F17"
         "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F18"
+        "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F17"
         "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F18"
-        "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F18"
-        "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F18"
+        "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F17"
         "/var/lib/chia/plotting/P06:/var/lib/chia/farm/F18"
       ];
       forwardConcurrency = 4;
