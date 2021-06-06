@@ -7,6 +7,8 @@
   ];
 
   config = {
+    boot.loader.efi.canTouchEfiVariables = false;
+    
     networking = {
       hostName = "hobbit2";
       hostId = "5ccfa0cc";
