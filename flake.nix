@@ -86,6 +86,14 @@
         ];
       };
 
+      hobbit2 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/hobbit2
+        ];
+      };
+
       bilbo = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
