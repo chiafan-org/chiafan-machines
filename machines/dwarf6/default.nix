@@ -27,7 +27,6 @@
         "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F26"
         "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F27"
         "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F28"
-        "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F29"
       ];
       forwardConcurrency = 4;
       staggering = 900;
