@@ -35,7 +35,7 @@
         "/var/lib/chia/plotting/P08:/var/lib/chia/farm/F30"
       ];
       forwardConcurrency = 4;
-      staggering = 900;
+      staggering = 1200;
     };
     
     # This value determines the NixOS release from which the default
