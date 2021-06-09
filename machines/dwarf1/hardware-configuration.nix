@@ -37,14 +37,14 @@
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/chia/farm/F15" =
-    { device = "/dev/disk/by-label/F15";
+  fileSystems."/var/lib/chia/farm/F34" =
+    { device = "/dev/disk/by-label/F34";
       fsType = "ext4";
       options = [ "auto" "nofail" ];
     };
 
-  fileSystems."/var/lib/chia/farm/F16" =
-    { device = "/dev/disk/by-label/F16";
+  fileSystems."/var/lib/chia/farm/F35" =
+    { device = "/dev/disk/by-label/F35";
       fsType = "ext4";
       options = [ "auto" "nofail" ];      
     };
