@@ -22,7 +22,6 @@
         "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F26"
         "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F27"
         "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F28"
-        "/var/lib/chia/plotting/P11:/var/lib/chia/farm/F29"
         "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F25"
         "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F26"
         "/var/lib/chia/plotting/P12:/var/lib/chia/farm/F27"
