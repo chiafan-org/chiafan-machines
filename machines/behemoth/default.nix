@@ -14,6 +14,13 @@
       hostId = "5c6aaab6";
     };
 
+    # Use the GRUB 2 boot loader.
+    boot.loader.grub = {
+      enable = true;
+      version = 2;
+      device = "/dev/sdc";
+    };
+
     users.users."chiafan" = {
       openssh.authorizedKeys.keyFiles = [
         ../../data/keys/breakds_samaritan.pub
