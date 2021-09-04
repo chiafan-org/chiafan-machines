@@ -18,7 +18,7 @@
     boot.loader.grub = {
       enable = true;
       version = 2;
-      device = "/dev/sdc";
+      device = "/dev/sda";
     };
 
     users.users."chiafan" = {
