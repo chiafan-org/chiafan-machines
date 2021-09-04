@@ -105,6 +105,7 @@
       behemoth = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          (chia-from-unstable "x86_64-linux")          
           vital-modules.nixosModules.foundation
           ./machines/behemoth
         ];
