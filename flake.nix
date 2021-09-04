@@ -102,6 +102,14 @@
         ];
       };
 
+      behemoth = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          vital-modules.nixosModules.foundation
+          ./machines/behemoth
+        ];
+      };
+
       laborfactory = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
